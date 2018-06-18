@@ -9,3 +9,9 @@ chatbot voor uva
 4. Vector representaties maken van articles
 5. Vector representaties maken van mogelijke queries (keywords)
 6. Wat cosine similarities uitrekenen en kijken wat de waardes worden
+
+## Product Backlog
+1. Use UvA SE  to retrieve and scan ‘best’ articles 				short	
+2. Use NLP techniques for QA to find direct answers in articles		long
+3. Calculate article ‘strengths’ in terms of probabilities 			medium
+4. Use ML on PAQ’s by users for better NLP							medium
