@@ -1,6 +1,8 @@
 # ChatBot
-chatbot voor uva
-
+GitHub for second year AI project. The UvA search engine returns too many search results. 
+The UvA wants to improve this process of QA in a dialogue form with a chatbot that returns
+only one correct URL of the webpage that contains the answer the person is looking for. 
+This project concerns the back-end of the chatbot (finding the correct URL).
 
 ## Sprint week 2
 1. Scraping werkende krijgen
