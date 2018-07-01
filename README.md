@@ -1,19 +1,4 @@
 # ChatBot
-GitHub for second year AI project. The UvA search engine returns too many search results. 
-The UvA wants to improve this process of QA in a dialogue form with a chatbot that returns
-only one correct URL of the webpage that contains the answer the person is looking for. 
-This project concerns the back-end of the chatbot (finding the correct URL).
+GitHub for a second year AI project at the University of Amsterdam (UvA). The project is about building a chatbot, specifically the back-end of a chatbot. The UvA wants to have a question-answering mechanism in the form of a chatbot, because the UvA search engine returns too many search results. The goal of this project is to be able to return only one URL of the correct webpage that contains the answer to the question of the user. 
 
-## Sprint week 2
-1. Scraping werkende krijgen
-2. Data ordenen OF structuur van Tim's project gebruiken
-3. Gewenste data kunnen ophalen uit de gemaakte database 
-4. Vector representaties maken van articles
-5. Vector representaties maken van mogelijke queries (keywords)
-6. Wat cosine similarities uitrekenen en kijken wat de waardes worden
-
-## Product Backlog
-1. Use UvA SE  to retrieve and scan ‘best’ articles 				short	
-2. Use NLP techniques for QA to find direct answers in articles		long
-3. Calculate article ‘strengths’ in terms of probabilities 			medium
-4. Use ML on PAQ’s by users for better NLP							medium
+We've experimented with three different possible solutions. First, we made a hierarchical tree structure and put all the A-Z pages into the right levels in that structure. When given a query, it will return the matching results based on keywords and a cosine similarity. Second, we used the UvA search engine and calculated the cosine similarity based on keywords of the top five search results. Lastly, we trained the Watson API on a database consisting of the general A-Z page and some studies. Watson returns a passage of the article and the URL.
