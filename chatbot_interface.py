@@ -1,5 +1,5 @@
 """
-This file contains an interface with which out Watson discovery environment can be accessed.
+This file contains an interface with which the Watson discovery environment can be accessed.
 The frontend_backend_interface function takes in a dictionary from the "front-end" group and returns a list of dictionaries: 
 one dictionary for each URL returned by Watson discovery.
 """
