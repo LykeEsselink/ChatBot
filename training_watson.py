@@ -19,7 +19,7 @@ def send_query(user_query):
     )
     #, return_fields='text'
     my_query = discovery.query(environment_id='26410a73-bf30-47c5-85cb-538a14797fd2',
-                                collection_id='eca8a314-b89a-4e08-8535-ac5235ccfc3b',
+                                collection_id='fb1465fc-5731-4e56-9028-fac58374b638',
                                 natural_language_query=user_query, return_fields=['text', 'level', 'keywords','url'],
                                 passages_fields=['text'],
                                 passages=True,
@@ -66,5 +66,5 @@ def send_relevancy(query, articleid1, relevancy1, articleid2, relevancy2):
 
     data = '\n{\n  "natural_language_query": '+'"'+ query +'"'+',\n  "examples": [\n    {\n      "document_id": ' + '"' + articleid1 + '"' + ',\n      "relevance": '+relevancy1+'\n    },\n    {\n      "document_id": ' + '"' + articleid2 + '"' + ',\n      "relevance": '+relevancy2+'\n    }\n  ]\n}'
     print(data)
-    response = requests.post('https://gateway.watsonplatform.net/discovery/api/v1/environments/26410a73-bf30-47c5-85cb-538a14797fd2/collections/eca8a314-b89a-4e08-8535-ac5235ccfc3b/training_data', headers=headers, params=params, data=data, auth=('044cea39-4515-404b-a5c1-3e7b216e1635', 'RK5rIKZ01yIf'))
+    response = requests.post('https://gateway.watsonplatform.net/discovery/api/v1/environments/26410a73-bf30-47c5-85cb-538a14797fd2/collections/fb1465fc-5731-4e56-9028-fac58374b638/training_data', headers=headers, params=params, data=data, auth=('044cea39-4515-404b-a5c1-3e7b216e1635', 'RK5rIKZ01yIf'))
     return(response.content)
