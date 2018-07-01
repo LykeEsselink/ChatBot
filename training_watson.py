@@ -1,5 +1,5 @@
 """
-This file contains the code necessary for training our Watson discovery environment with the Watson discovery API.
+This file contains the code for training our Watson discovery environment with the Watson discovery API.
 The send_query function can be used to send a natural language query to watson.
 The relevance of the results must then be rated manually and submitted to watson
 with the send_relevancy function. The example queries come from the watson_questions.txt file.
