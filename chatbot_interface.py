@@ -1,4 +1,12 @@
-# Before use, make sure all these packages are properly installed.
+"""
+
+This file contains an interface with which the other group can access our Watson Discovery environment.
+The frontend_backend_interface function takes in a dictionary from the "front-end" group and returns a list of dictionaries: 
+one dictionary for each URL returned by Watson discovery.
+
+"""
+
+# Imports
 
 import os
 import json
@@ -6,7 +14,8 @@ import nltk
 import requests
 from watson_developer_cloud import DiscoveryV1
 
-# Helper function
+
+# Helper functions
 
 def get_passage(passages_list, doc_id):
     for passage_dict in passages_list:
@@ -14,9 +23,6 @@ def get_passage(passages_list, doc_id):
             return passage_dict['passage_text']
 
     return("No passage was found for this document.")
-
-# This function takes in a dictionary from the "front-end" group and
-# returns a list of dictionaries.
 
 def add_bonus(s, p):
     m = 1 - s
